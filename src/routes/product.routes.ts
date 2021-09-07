@@ -32,7 +32,7 @@ productRouter.post('/', (request, response) => {
     });
     response.status(201).json(produto);
   } catch (err) {
-    return response.status(400).json({ Erro: err.message });
+    return response.status(400).json({Error: err});
   }
 });
 
